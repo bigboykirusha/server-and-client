@@ -83,7 +83,7 @@ const UserList: React.FC = () => {
             <button
                onClick={() => handlePageChange(page - 1)}
                disabled={page === 1}
-               className="p-3 h-12 w-12 rounded-[100%] bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors duration-300"
+               className="p-3 h-12 w-12 rounded-[100%] bg-indigo-500 text-white hover:bg-indigo-600 transition-colors duration-300"
             >
                &lt;
             </button>
@@ -93,7 +93,7 @@ const UserList: React.FC = () => {
             <button
                onClick={() => handlePageChange(page + 1)}
                disabled={page === totalPages}
-               className="p-3 h-12 w-12 rounded-[100%] bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors duration-300"
+               className="p-3 h-12 w-12 rounded-[100%] bg-indigo-500 text-white hover:bg-indigo-600 transition-colors duration-300"
             >
                &gt;
             </button>
