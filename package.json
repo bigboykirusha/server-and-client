@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run start-server\" \"npm run start-client\"",
+    "start-client": "cd user-report && npm run dev",
+    "start-server": "node server.js",
+    "install-deps": "cd user-report && npm install && cd .. && npm install" 
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.25.3",
+    "fastify-cors": "^6.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
